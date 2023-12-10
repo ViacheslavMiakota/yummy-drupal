@@ -1,0 +1,25 @@
+uuid: 132d1786-9ce9-4427-8ae2-2f507a914cb2
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2ac87ece-1296-4c2f-941d-75f8697163b9'
+  module:
+    - block_content
+  theme:
+    - yummy
+id: yummy_footerlogo
+theme: yummy
+region: footer_left
+weight: -7
+provider: null
+plugin: 'block_content:2ac87ece-1296-4c2f-941d-75f8697163b9'
+settings:
+  id: 'block_content:2ac87ece-1296-4c2f-941d-75f8697163b9'
+  label: 'Footer logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

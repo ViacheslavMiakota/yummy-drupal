@@ -1,0 +1,25 @@
+uuid: 56839eb0-bf27-4562-861a-a283f7c2de48
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - yummy
+id: yummy_osnovnanavigaciya
+theme: yummy
+region: footer_center
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основна навіґація'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

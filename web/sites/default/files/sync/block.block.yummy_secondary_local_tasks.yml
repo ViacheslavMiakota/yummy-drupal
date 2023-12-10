@@ -1,0 +1,22 @@
+uuid: dcfd0e4a-fdf7-4fd1-9a88-691cdd030ad0
+langcode: uk
+status: false
+dependencies:
+  theme:
+    - yummy
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: yummy_secondary_local_tasks
+theme: yummy
+region: highlighted
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Другорядні вкладки'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

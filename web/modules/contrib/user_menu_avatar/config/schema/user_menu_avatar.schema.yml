@@ -1,0 +1,10 @@
+user_menu_avatar.settings:
+  type: config_object
+  label: 'Configuration translation settings'
+  mapping:
+    custom_anonymous_text:
+      type: text
+      label: 'Custom anonymous text'
+    avatar_custom_display_text:
+      type: text
+      label: 'Avatar custom display text'

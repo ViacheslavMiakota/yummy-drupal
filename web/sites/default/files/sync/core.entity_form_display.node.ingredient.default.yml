@@ -1,0 +1,57 @@
+uuid: 7b829a43-346a-4ecd-8138-534d55b8f0e3
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.node.ingredient.body
+    - field.field.node.ingredient.field_thb
+    - image.style.thumbnail
+    - node.type.ingredient
+  module:
+    - image
+    - path
+    - text
+id: node.ingredient.default
+targetEntityType: node
+bundle: ingredient
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_thb:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

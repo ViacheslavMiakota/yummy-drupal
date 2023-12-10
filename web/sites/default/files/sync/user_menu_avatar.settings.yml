@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: eAk86glP4GrsZqgNd0iirpk_MR6qKoK9Au2mPmoUJag
+langcode: uk
+custom_anonymous_text: Вхід
+avatar_custom_display_text: ''
+dependencies:
+  module:
+    - user_menu_avatar
+  enforced:
+    module:
+      - user_menu_avatar

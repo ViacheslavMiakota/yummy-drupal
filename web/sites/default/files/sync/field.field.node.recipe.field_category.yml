@@ -1,0 +1,19 @@
+uuid: 1fb479d5-6889-47d9-afe1-003a4d189ad1
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.recipe
+id: node.recipe.field_category
+field_name: field_category
+entity_type: node
+bundle: recipe
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

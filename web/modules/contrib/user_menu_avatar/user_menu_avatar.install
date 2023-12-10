@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Install file for updates between versions.
+ */
+
+/**
+ * Updates settings configuration.
+ */
+function user_menu_avatar_update_8001() {
+  $config_factory = \Drupal::configFactory();
+  $config = $config_factory->getEditable('user_menu_avatar.settings');
+  $config->clear('link_text');
+
+  $config->save(TRUE);
+}

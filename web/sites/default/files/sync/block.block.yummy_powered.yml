@@ -1,0 +1,22 @@
+uuid: 3570f596-9918-4773-84fa-fbba54ab7960
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - yummy
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: yummy_powered
+theme: yummy
+region: footer
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Працює на Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 5a798f7a-6e9c-45b7-b93c-1e751f81b68e
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:eee5a0ed-a710-4394-a924-33fcd32d758a'
+  module:
+    - block_content
+  theme:
+    - yummy
+id: yummy_informaciyaprosayt
+theme: yummy
+region: footer_left
+weight: -6
+provider: null
+plugin: 'block_content:eee5a0ed-a710-4394-a924-33fcd32d758a'
+settings:
+  id: 'block_content:eee5a0ed-a710-4394-a924-33fcd32d758a'
+  label: 'Інформація про сайт'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

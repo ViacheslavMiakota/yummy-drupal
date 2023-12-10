@@ -1,0 +1,22 @@
+uuid: 98616e55-0123-4603-b4ec-e3de3a35dd83
+langcode: uk
+status: false
+dependencies:
+  theme:
+    - yummy
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: yummy_primary_local_tasks
+theme: yummy
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Основні вкладки'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

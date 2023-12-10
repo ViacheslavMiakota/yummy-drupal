@@ -1,0 +1,274 @@
+<?php
+
+/**
+ * @file
+ * Display user picture and/or user name in /use link.
+ */
+
+use Drupal\Component\Render\FormattableMarkup;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\file\Entity\File;
+
+/**
+ * Get our config form values.
+ */
+function uma_c_fv() {
+
+  // Get the form config.
+  return \Drupal::config('user_menu_avatar.settings');
+}
+
+/**
+ * Set $name value.
+ */
+function uma_name() {
+
+  // Instantiate variables.
+  $currentUser = \Drupal::service('umas')->getCurrentUser();
+
+  // Check if we should display for anonymous.
+  if ($currentUser['isAnonymous']) {
+
+    // Get our anonymous text.
+    $name = uma_c_fv()->get('custom_anonymous_text');
+  }
+
+  // Check if we should display for authenticated.
+  if ($currentUser['isAuthenticated']) {
+
+    // Set $name as default username.
+    $name = $currentUser['displayName'];
+
+    // Get our custom field name.
+    $customNameField = uma_c_fv()->get('avatar_custom_name_field');
+
+    // Check custom name field exists.
+    if ($currentUser['currentUserEntity']->hasField($customNameField) && !$currentUser['currentUserEntity']->get($customNameField)->isEmpty()) {
+
+      // Set $name as custom name field value.
+      $name = $currentUser['currentUserEntity']->get($customNameField)->value;
+    }
+
+    // Check for custom display text.
+    if (uma_c_fv()->get('avatar_custom_display_text') !== "") {
+      $name = uma_c_fv()->get('avatar_custom_display_text');
+    }
+  }
+
+  return $name;
+}
+
+/**
+ * Set the $image value.
+ */
+function uma_image() {
+
+  // Instantiate variables.
+  $image = NULL;
+  $currentUser = \Drupal::service('umas')->getCurrentUser();
+
+  // Check to display anonymous avatar.
+  if ($currentUser['isAnonymous'] && uma_c_fv()->get('display_anonymous_avatar') === 'yes' && uma_c_fv()->get('anonymous_user_avatar')[0]) {
+
+    // Load image style.
+    $imageStyle = \Drupal::entityTypeManager()
+      ->getStorage('image_style')
+      ->load(uma_c_fv()->get('avatar_image_style'));
+
+    // Load anonymous avatar with image style.
+    $imageStyleURL = $imageStyle->buildUrl(File::load(uma_c_fv()->get('anonymous_user_avatar')[0])->getFileUri());
+
+    // Set anonymous image url value.
+    $image = \Drupal::service('file_url_generator')->transformRelative($imageStyleURL);
+  }
+
+  // Check to display authenticated avatar.
+  if ($currentUser['isAuthenticated'] && uma_c_fv()->get('display_menu_avatar') === 'yes') {
+
+    // Set the avatar field name.
+    $avatarImageField = uma_c_fv()->get('avatar_image_field');
+
+    // Check avatar field exists.
+    if ($currentUser['currentUserEntity']->hasField($avatarImageField)) {
+
+      // Get field type.
+      $fieldType = $currentUser['currentUserEntity']->get($avatarImageField)->getFieldDefinition()->getType();
+
+      // Check field type.
+      if ($fieldType === "image") {
+
+        // Get image.
+        $image = \Drupal::service('umas')->getFieldImage($currentUser['currentUserEntity']->get($avatarImageField), uma_c_fv()->get('avatar_image_style'));
+      }
+
+      // Check field type.
+      if ($fieldType === "entity_reference") {
+
+        // Get media image.
+        $image = \Drupal::service('umas')->getMediaFieldImage($currentUser['currentUserEntity']->get($avatarImageField), uma_c_fv()->get('avatar_image_style'));
+      }
+    }
+  }
+
+  return $image;
+}
+
+/**
+ * Build our anon replacement markup.
+ */
+function uma_anon_markup() {
+
+  $markup = NULL;
+
+  // Display image and anon name.
+  if (uma_image() && uma_c_fv()->get('display_anonymous_text') === 'yes') {
+    $markup = new FormattableMarkup(
+      '<div class="uma-flex-wrapper"><span class="uma-image shape-@avatarShape" style="background-image: url(@imageURL); width: @avatarSize; height: @avatarSize;" /></span><span class="uma-name">@userName</span></div>', [
+        '@avatarShape' => uma_c_fv()->get('avatar_shape'),
+        '@avatarSize' => uma_c_fv()->get('avatar_size') . 'px',
+        '@imageURL' => uma_image(),
+        '@userName' => uma_name(),
+      ]
+    );
+  }
+  // Only display the image.
+  elseif (uma_image()) {
+    $markup = new FormattableMarkup(
+      '<span class="uma-image image-only shape-@avatarShape" style="background-image: url(@imageURL); width: @avatarSize; height: @avatarSize;" /><span class="visually-hidden">@userName</span></span>', [
+        '@avatarShape' => uma_c_fv()->get('avatar_shape'),
+        '@avatarSize' => uma_c_fv()->get('avatar_size') . 'px',
+        '@imageURL' => uma_image(),
+        '@userName' => uma_name(),
+      ]
+    );
+  }
+  // Only display the anon name.
+  elseif (uma_c_fv()->get('display_anonymous_text') === 'yes') {
+    $markup = new FormattableMarkup(
+      '<span class="uma-name name-only">@userName</span>', [
+        '@userName' => uma_name(),
+      ]
+    );
+  }
+
+  return $markup;
+}
+
+/**
+ * Build our auth replacement markup.
+ */
+function uma_auth_markup() {
+
+  $markup = NULL;
+
+  // Display image and auth name.
+  if (uma_image() && uma_c_fv()->get('display_user_name') === 'yes') {
+    $markup = new FormattableMarkup(
+      '<div class="uma-flex-wrapper"><span class="uma-image shape-@avatarShape" style="background-image: url(@imageURL); width: @avatarSize; height: @avatarSize;" /></span><span class="uma-name">@userName</span></div>', [
+        '@avatarShape' => uma_c_fv()->get('avatar_shape'),
+        '@avatarSize' => uma_c_fv()->get('avatar_size') . 'px',
+        '@imageURL' => uma_image(),
+        '@userName' => uma_name(),
+      ]
+    );
+  }
+  // Only display the image.
+  elseif (uma_image()) {
+    $markup = new FormattableMarkup(
+      '<span class="uma-image image-only shape-@avatarShape" style="background-image: url(@imageURL); width: @avatarSize; height: @avatarSize;" /><span class="visually-hidden">@userName</span></span>', [
+        '@avatarShape' => uma_c_fv()->get('avatar_shape'),
+        '@avatarSize' => uma_c_fv()->get('avatar_size') . 'px',
+        '@imageURL' => uma_image(),
+        '@userName' => uma_name(),
+      ]
+    );
+  }
+  // Only display the auth name.
+  elseif (uma_c_fv()->get('display_user_name') === 'yes') {
+    $markup = new FormattableMarkup(
+      '<span class="uma-name name-only">@userName</span>', [
+        '@userName' => uma_name(),
+      ]
+    );
+  }
+
+  return $markup;
+}
+
+/**
+ * Implements hook_preprocess_hook().
+ *
+ * @inheritdoc
+ */
+function user_menu_avatar_preprocess_menu(&$variables) {
+
+  // Check we have anything to replace.
+  if (uma_anon_markup() || uma_auth_markup()) {
+
+    // Loop through first menu level.
+    foreach ($variables['items'] as &$key) {
+      uma_apply_markup($variables, $key);
+    }
+  }
+}
+
+/**
+ * Apply markup per menu link.
+ */
+function uma_apply_markup(&$variables, &$menu_link) {
+
+  // Compare menu link ID value.
+  if (uma_anon_markup() && $menu_link['url']->isRouted() && $menu_link['url']->getRouteName() === "user.login") {
+
+    // Replace title with our markup.
+    $menu_link['title'] = uma_anon_markup();
+
+    // Attach our styles library.
+    $variables['#attached']['library'][] = 'user_menu_avatar/styles';
+
+    // Set cache context per user.
+    $variables['#cache']['contexts'][] = 'user';
+  }
+
+  // Compare menu link ID value.
+  if (uma_auth_markup() && $menu_link['url']->isRouted() && $menu_link['url']->getRouteName() === "user.page") {
+
+    // Replace title with our markup.
+    $menu_link['title'] = uma_auth_markup();
+
+    // Attach our styles library.
+    $variables['#attached']['library'][] = 'user_menu_avatar/styles';
+
+    // Set cache context per user.
+    $variables['#cache']['contexts'][] = 'user';
+  }
+
+  // Loop through second menu level.
+  foreach ($menu_link['below'] as &$beKey) {
+    uma_apply_markup($variables, $beKey);
+  }
+}
+
+/**
+ * Implements hook_help().
+ *
+ * @inheritdoc
+ */
+function user_menu_avatar_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.user_menu_avatar':
+      $text = file_get_contents(dirname(__FILE__) . '/README.md');
+      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+        return '<pre>' . $text . '</pre>';
+      }
+      else {
+        // Use the Markdown filter to render the README.
+        $filter_manager = \Drupal::service('plugin.manager.filter');
+        $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
+        $config = ['settings' => $settings];
+        $filter = $filter_manager->createInstance('markdown', $config);
+        return $filter->process($text, 'en');
+      }
+  }
+  return NULL;
+}

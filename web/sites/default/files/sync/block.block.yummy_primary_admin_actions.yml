@@ -1,0 +1,20 @@
+uuid: 7b884210-c0b7-46a6-a607-8af9519faa05
+langcode: uk
+status: false
+dependencies:
+  theme:
+    - yummy
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: yummy_primary_admin_actions
+theme: yummy
+region: highlighted
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основні адміністративні дії'
+  label_display: '0'
+  provider: core
+visibility: {  }

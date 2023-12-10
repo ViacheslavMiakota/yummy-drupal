@@ -1,0 +1,26 @@
+type: theme
+base theme: bootstrap
+core_version_requirement: ^9 || ^10
+
+name: 'yummy'
+description: 'A Drupal Bootstrap 3 based sub-theme.'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  footer_right: 'Footer right'
+  footer_center: 'Footer center'
+  footer_left: 'Footer left'
+  footer_bottom: 'Footer bottom'
+
+libraries-extend:
+  bootstrap/framework:
+    - yummy/framework

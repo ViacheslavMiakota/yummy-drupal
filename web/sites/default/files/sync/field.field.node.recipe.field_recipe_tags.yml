@@ -1,0 +1,19 @@
+uuid: 31edf2fc-c53c-40da-a617-0971917d7795
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recipe_tags
+    - node.type.recipe
+id: node.recipe.field_recipe_tags
+field_name: field_recipe_tags
+entity_type: node
+bundle: recipe
+label: Recipe_tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

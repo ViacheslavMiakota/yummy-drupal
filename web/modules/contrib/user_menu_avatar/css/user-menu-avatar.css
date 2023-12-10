@@ -1,0 +1,40 @@
+.uma-flex-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.uma-image {
+  position: relative;
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.uma-image.shape-circle {
+  border-radius: 50%;
+}
+
+.uma-flex-wrapper .uma-name {
+  margin-left: 1rem;
+}
+
+.image-only .visually-hidden {
+  clip: rect(0 0 0 0);
+  border: 0;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 0.1rem;
+  margin: -0.1rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 0.1rem;
+}

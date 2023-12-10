@@ -1,0 +1,12 @@
+uuid: 13747079-31c6-4094-983b-a44fdfe344d7
+langcode: uk
+status: true
+dependencies: {  }
+id: newsletter
+label: Newsletter
+recipients:
+  - yummy@gmail.com
+reply: ''
+weight: 0
+message: 'You have subscribed to the newsletter'
+redirect: /home

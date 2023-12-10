@@ -1,0 +1,4 @@
+services:
+  umas:
+    class: Drupal\user_menu_avatar\Services\UserMenuAvatarServices
+    arguments: ['@entity_type.manager', '@file_url_generator', '@current_user', '@entity.repository']

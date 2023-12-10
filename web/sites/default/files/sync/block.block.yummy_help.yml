@@ -1,0 +1,22 @@
+uuid: 18641b11-b9ec-4b9d-bc1d-db20062b2109
+langcode: uk
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - yummy
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: yummy_help
+theme: yummy
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Довідка
+  label_display: '0'
+  provider: help
+visibility: {  }

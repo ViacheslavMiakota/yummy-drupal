@@ -1,0 +1,14 @@
+name: User Menu Avatar
+type: module
+description: 'Replaces user.login and user.page menu items with the current user picture and/or the username. '
+package: 'Custom'
+core_version_requirement: ^9.3 || ^10
+hidden: false
+dependencies:
+  - drupal:user
+configure: user_menu_avatar.config
+
+# Information added by Drupal.org packaging script on 2023-08-08
+version: '9.0.0'
+project: 'user_menu_avatar'
+datestamp: 1691525949

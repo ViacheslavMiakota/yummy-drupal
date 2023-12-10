@@ -1,0 +1,23 @@
+uuid: 93183d31-5e15-489f-bb63-1828ede7c36c
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time
+    - node.type.recipe
+id: node.recipe.field_time
+field_name: field_time
+entity_type: node
+bundle: recipe
+label: Time
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: min
+field_type: integer

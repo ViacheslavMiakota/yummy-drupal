@@ -1,0 +1,47 @@
+uuid: 41e022ed-a120-40d1-8fac-f90a5ac9a3ea
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_ingredient
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: 'Import Ingredients from JSON'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls: /var/www/html/web/sites/data/ingredients.json
+  ids:
+    _id:
+      type: string
+  fields:
+    -
+      name: _id
+      label: _id
+      selector: _id/$oid
+    -
+      name: ttl
+      label: Title
+      selector: ttl
+    -
+      name: desc
+      label: Description
+      selector: desc
+    -
+      name: t
+      label: Type
+      selector: t
+process:
+  title: ttl
+  body/value: desc
+  field_t: t
+  uid:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:node'
+  default_bundle: ingredient
+migration_dependencies: null

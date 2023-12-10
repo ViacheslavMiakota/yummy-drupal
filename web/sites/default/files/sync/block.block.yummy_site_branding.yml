@@ -1,0 +1,25 @@
+uuid: cc306fc0-1f57-4fd2-8075-4744fd19e912
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - yummy
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: yummy_site_branding
+theme: yummy
+region: navigation
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Брендування сайту'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,9 @@
+custom_anonymous_text: 'Log in'
+avatar_custom_display_text: ''
+langcode: en
+dependencies:
+  module:
+    - user_menu_avatar
+  enforced:
+    module:
+      - user_menu_avatar

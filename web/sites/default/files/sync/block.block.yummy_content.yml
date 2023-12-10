@@ -1,0 +1,22 @@
+uuid: 53cc1cf2-67da-4a1c-8abe-08ab5ec33526
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - yummy
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: yummy_content
+theme: yummy
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Основний вміст сторінки'
+  label_display: '0'
+  provider: system
+visibility: {  }

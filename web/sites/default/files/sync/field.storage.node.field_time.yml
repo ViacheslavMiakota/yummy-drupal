@@ -1,0 +1,20 @@
+uuid: 33d1f341-9321-4d35-a93f-1f8a21a95c05
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_time
+field_name: field_time
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

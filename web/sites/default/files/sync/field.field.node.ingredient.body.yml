@@ -1,0 +1,32 @@
+uuid: 854bb464-a8ed-4738-a415-01ee57a1a35d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - node.type.ingredient
+  module:
+    - text
+id: node.ingredient.body
+field_name: body
+entity_type: node
+bundle: ingredient
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_with_summary

@@ -1,0 +1,41 @@
+.region-navigation{
+  display: flex;
+  justify-content: space-between;
+ }
+.navbar-default{ 
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: stretch;
+   width: 100%;
+   position: absolute;
+   z-index: 7;
+   background-color: transparent;
+   left: 0px;
+   right: 0px;
+   border: none;
+ }
+.page-header {
+ color: rgb(60, 0, 128);
+ }
+
+.navbar-collapse{
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-default li a{
+  color: #23262A;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.navbar-nav li a{
+  color: #FAFAFA;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.14px;
+}

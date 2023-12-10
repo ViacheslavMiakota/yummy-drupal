@@ -1,0 +1,25 @@
+uuid: 0824074b-7c43-4df2-bacb-c27de8270932
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:84592190-90b4-4797-9ead-c6422ae32540'
+  module:
+    - block_content
+  theme:
+    - yummy
+id: yummy_formemail
+theme: yummy
+region: footer_right
+weight: 0
+provider: null
+plugin: 'block_content:84592190-90b4-4797-9ead-c6422ae32540'
+settings:
+  id: 'block_content:84592190-90b4-4797-9ead-c6422ae32540'
+  label: 'form email'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

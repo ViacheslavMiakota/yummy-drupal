@@ -1,0 +1,13 @@
+uuid: 85c83d85-c4ce-4e4d-8fb4-6e87e46c7340
+langcode: uk
+status: true
+dependencies:
+  module:
+    - path_alias
+_core:
+  default_config_hash: dhjFABRzm52DkRXnYja5ZoHwjY0R3gEGic3KpDUXgRo
+id: path_alias.path_alias
+target_entity_type_id: path_alias
+target_bundle: path_alias
+default_langcode: und
+language_alterable: true

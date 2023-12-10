@@ -1,0 +1,19 @@
+uuid: e904e00a-0ef3-401c-b7d0-0d6938945f5d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_email
+id: contact_message.personal.field_email
+field_name: field_email
+entity_type: contact_message
+bundle: personal
+label: email
+description: 'Enter your email address'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

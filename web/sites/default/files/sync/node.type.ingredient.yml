@@ -1,0 +1,22 @@
+uuid: f15e1702-1b18-40ee-b801-9cdc6f2b4103
+langcode: uk
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - tools
+      - admin
+      - account
+      - footer
+      - main
+    parent: 'main:'
+name: Ingredient
+type: ingredient
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

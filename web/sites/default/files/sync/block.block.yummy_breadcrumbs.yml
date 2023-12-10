@@ -1,0 +1,22 @@
+uuid: 377c7170-f693-45d5-b94b-df9c7b407848
+langcode: uk
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - yummy
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: yummy_breadcrumbs
+theme: yummy
+region: header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Рядки навіґації'
+  label_display: '0'
+  provider: system
+visibility: {  }
