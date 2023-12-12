@@ -1,0 +1,15 @@
+uuid: 50f50dbd-b31a-43a5-8b94-69455dbd904f
+langcode: uk
+status: true
+dependencies:
+  module:
+    - media
+  enforced:
+    module:
+      - media_library
+_core:
+  default_config_hash: Tdhz-aDHfDoV1Ul9umtItxGTrjkFzoNAkDw8FWXjYA0
+id: media.media_library
+label: Медіатека
+targetEntityType: media
+cache: true

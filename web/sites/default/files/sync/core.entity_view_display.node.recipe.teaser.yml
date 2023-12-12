@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.recipe.body
     - field.field.node.recipe.field_area
     - field.field.node.recipe.field_category
+    - field.field.node.recipe.field_ingredients
     - field.field.node.recipe.field_instructions
     - field.field.node.recipe.field_recipe_tags
     - field.field.node.recipe.field_time
@@ -35,6 +36,7 @@ content:
 hidden:
   field_area: true
   field_category: true
+  field_ingredients: true
   field_instructions: true
   field_recipe_tags: true
   field_time: true

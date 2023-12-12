@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '9466233f612f7c95fc462b40ffe58fb9ac056e4b',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -361,6 +361,15 @@
             'reference' => '8.x-1.3',
             'dev_requirement' => false,
         ),
+        'drupal/menu_item_extras' => array(
+            'pretty_version' => '3.0.2',
+            'version' => '3.0.2.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/menu_item_extras',
+            'aliases' => array(),
+            'reference' => '3.0.2',
+            'dev_requirement' => false,
+        ),
         'drupal/migrate_file' => array(
             'pretty_version' => '2.1.2',
             'version' => '2.1.2.0',
@@ -389,12 +398,12 @@
             'dev_requirement' => false,
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '9466233f612f7c95fc462b40ffe58fb9ac056e4b',
             'dev_requirement' => false,
         ),
         'drupal/user_menu_avatar' => array(
@@ -497,12 +506,12 @@
             'dev_requirement' => false,
         ),
         'nikic/php-parser' => array(
-            'pretty_version' => 'v4.17.1',
-            'version' => '4.17.1.0',
+            'pretty_version' => 'v4.18.0',
+            'version' => '4.18.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nikic/php-parser',
             'aliases' => array(),
-            'reference' => 'a6303e50c90c355c7eeee2c4a8b27fe8dc8fef1d',
+            'reference' => '1bcbb2179f97633e98bbbc87044ee2611c7d7999',
             'dev_requirement' => false,
         ),
         'orno/di' => array(

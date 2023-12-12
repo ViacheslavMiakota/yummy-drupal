@@ -1,4 +1,3 @@
-uuid: a560991d-1b65-4014-8d0c-1c11b6dc48f1
 langcode: en
 status: true
 dependencies: {  }
@@ -47,7 +46,6 @@ source:
       label: Time
       selector: time
 process:
-  title: title
   field_title: title
   body/value: description
   field_category: category

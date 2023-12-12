@@ -1,0 +1,10 @@
+uuid: 8f22c738-0726-4f2e-ad64-b5ad668ae3ba
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OMabIjZ7bBfBOlEZNDj-4VC6dYBC9E7B3rEtWzoCOQw
+id: mie-demo-base-menu
+label: 'Menu Item Extras Demo Menu'
+description: 'Demo menu for Menu Item Extras module'
+locked: false

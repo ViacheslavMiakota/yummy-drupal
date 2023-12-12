@@ -1,0 +1,13 @@
+uuid: 93b33310-1546-42b9-9a87-45f4bf72ba73
+langcode: uk
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: FrZy1tmuXJcOxhXlBoI1Hsnen5TT-9OCC1iolWH84go
+id: media_delete_action
+label: 'Видалити медіа'
+type: media
+plugin: 'entity:delete_action:media'
+configuration: {  }

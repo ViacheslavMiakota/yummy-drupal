@@ -1,0 +1,13 @@
+uuid: d470f2f3-997f-4289-8611-07ccfb298261
+langcode: uk
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: CsK6TseQ2DatEbZgbd30swOlZ28_HHwAESU2LvEnWq0
+id: media_unpublish_action
+label: 'Зняти з публікації медіа'
+type: media
+plugin: 'entity:unpublish_action:media'
+configuration: {  }

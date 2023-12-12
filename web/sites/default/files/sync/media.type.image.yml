@@ -1,0 +1,16 @@
+uuid: d73af569-2226-4d39-8560-3981e0ba01d4
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6Qope5wG7HUpV0tPOBMtDI_GZkHFcF1Xj4hgD9Cu_hM
+id: image
+label: Зображення
+description: 'Використовувати локальні зображення для багаторазових медіа.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

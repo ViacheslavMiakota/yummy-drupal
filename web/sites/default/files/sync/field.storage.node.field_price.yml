@@ -1,0 +1,23 @@
+uuid: 71dab493-9e90-457d-8cc0-11093dd70c74
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - migrate_json_example
+_core:
+  default_config_hash: zMNljebh7XH35S0duE5QH6HU_Vjm7HQufSe1wAJU9DY
+id: node.field_price
+field_name: field_price
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

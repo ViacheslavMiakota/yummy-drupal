@@ -1,0 +1,10 @@
+uuid: e6ddcba0-bdf7-4680-9dda-8eb71ec4cfb8
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XOrNe2VEI-6LMtoy81FffNfxJjhsWvKSsrH7f34hVz0
+name: 'MIE Demo Content'
+vid: mie_demo_content
+description: 'Demo content for Menu Item Extras module'
+weight: 0

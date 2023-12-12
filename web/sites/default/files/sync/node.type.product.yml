@@ -1,0 +1,23 @@
+uuid: 6cf95e8b-a6d7-4c2d-a6ef-3be6934ac327
+langcode: uk
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - migrate_json_example
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: u8WTJoe060DrJePUOYubvcWCDhA5B9WynIqeeOpRLrI
+name: Товар
+type: product
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.recipe.body
     - field.field.node.recipe.field_area
     - field.field.node.recipe.field_category
+    - field.field.node.recipe.field_ingredients
     - field.field.node.recipe.field_instructions
     - field.field.node.recipe.field_recipe_tags
     - field.field.node.recipe.field_time
@@ -48,6 +49,14 @@ content:
     region: content
     settings:
       rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ingredients:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_instructions:

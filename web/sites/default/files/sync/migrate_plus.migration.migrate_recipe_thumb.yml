@@ -1,0 +1,32 @@
+uuid: 8a20c274-8363-4b8d-bdbb-90de97c99e0d
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_recipe_thumb
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: 'Custom Thumb Image Migration'
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  urls: /var/www/html/web/sites/data/recipes.json
+  fields:
+    -
+      name: _id
+      label: _id
+      selector: _id/$oid
+    -
+      name: thumb
+      label: Thumb
+      selector: thumb
+process:
+  filename:
+    plugin: migration_lookup
+    source: thumb
+destination:
+  plugin: 'entity:file'
+migration_dependencies: null

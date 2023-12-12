@@ -1,0 +1,40 @@
+uuid: 9ac07a01-430a-4fab-89c3-0b20e012cf77
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_image
+    - system.menu.mie-demo-base-menu
+  module:
+    - image
+_core:
+  default_config_hash: OoY0CvJxgXTn4Q-HdnWB7-IEaaMTtFrhj9VjX2gA-e8
+id: menu_link_content.mie-demo-base-menu.field_image
+field_name: field_image
+entity_type: menu_link_content
+bundle: mie-demo-base-menu
+label: Зображення
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg svg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image
