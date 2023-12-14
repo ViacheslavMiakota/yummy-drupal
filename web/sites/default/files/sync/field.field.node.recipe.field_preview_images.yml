@@ -1,0 +1,27 @@
+uuid: 7c77c49c-a768-4fec-8ec3-5cec93030a0f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preview_images
+    - node.type.recipe
+  module:
+    - file
+id: node.recipe.field_preview_images
+field_name: field_preview_images
+entity_type: node
+bundle: recipe
+label: Preview_images
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

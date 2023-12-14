@@ -1,0 +1,8 @@
+uuid: 7e46e290-0162-4c27-b894-38688ac81e55
+langcode: uk
+status: true
+dependencies: {  }
+id: recipe_with_images
+label: 'Recipe with images'
+revision: 0
+description: ''

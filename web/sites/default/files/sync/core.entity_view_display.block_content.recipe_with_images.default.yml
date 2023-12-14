@@ -1,0 +1,23 @@
+uuid: eae62a55-5340-45d1-ab92-bda0bcdb9d5d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - block_content.type.recipe_with_images
+    - field.field.block_content.recipe_with_images.body
+  module:
+    - text
+id: block_content.recipe_with_images.default
+targetEntityType: block_content
+bundle: recipe_with_images
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

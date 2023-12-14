@@ -8,10 +8,14 @@ dependencies:
     - field.field.node.recipe.field_category
     - field.field.node.recipe.field_ingredients
     - field.field.node.recipe.field_instructions
+    - field.field.node.recipe.field_preview_images
     - field.field.node.recipe.field_recipe_tags
+    - field.field.node.recipe.field_thumb_images
     - field.field.node.recipe.field_time
     - node.type.recipe
   module:
+    - file
+    - image
     - text
     - user
 id: node.recipe.default
@@ -56,6 +60,14 @@ content:
     third_party_settings: {  }
     weight: 104
     region: content
+  field_preview_images:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 111
+    region: content
   field_recipe_tags:
     type: string
     label: above
@@ -63,6 +75,17 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 108
+    region: content
+  field_thumb_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 110
     region: content
   field_time:
     type: number_integer

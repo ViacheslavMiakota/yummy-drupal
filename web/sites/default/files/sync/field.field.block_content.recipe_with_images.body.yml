@@ -1,0 +1,24 @@
+uuid: 517848be-d326-40cd-8642-a5dddce11d16
+langcode: uk
+status: true
+dependencies:
+  config:
+    - block_content.type.recipe_with_images
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.recipe_with_images.body
+field_name: body
+entity_type: block_content
+bundle: recipe_with_images
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

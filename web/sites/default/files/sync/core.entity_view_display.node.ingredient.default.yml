@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.ingredient.body
-    - field.field.node.ingredient.field_thb
+    - field.field.node.ingredient.field_ingredient_thb
+    - field.field.node.ingredient.field_thb_images
     - node.type.ingredient
   module:
+    - file
     - image
     - text
     - user
@@ -22,7 +24,7 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_thb:
+  field_ingredient_thb:
     type: image
     label: above
     settings:
@@ -32,6 +34,14 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_thb_images:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   langcode: true

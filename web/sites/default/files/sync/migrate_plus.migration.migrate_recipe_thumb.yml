@@ -11,9 +11,12 @@ migration_group: null
 label: 'Custom Thumb Image Migration'
 source:
   plugin: url
-  data_fetcher_plugin: http
+  data_fetcher_plugin: file
   data_parser_plugin: json
   urls: /var/www/html/web/sites/data/recipes.json
+  ids:
+    _id:
+      type: string
   fields:
     -
       name: _id
@@ -25,8 +28,11 @@ source:
       selector: thumb
 process:
   filename:
-    plugin: migration_lookup
-    source: thumb
+    -
+      plugin: migration_lookup
+      migration: migrate_recipe
+      source: thumb
+  uri: thumb
 destination:
   plugin: 'entity:file'
 migration_dependencies: null

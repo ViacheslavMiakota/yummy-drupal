@@ -9,7 +9,9 @@ dependencies:
     - field.field.node.recipe.field_category
     - field.field.node.recipe.field_ingredients
     - field.field.node.recipe.field_instructions
+    - field.field.node.recipe.field_preview_images
     - field.field.node.recipe.field_recipe_tags
+    - field.field.node.recipe.field_thumb_images
     - field.field.node.recipe.field_time
     - node.type.recipe
   module:
@@ -38,6 +40,8 @@ hidden:
   field_category: true
   field_ingredients: true
   field_instructions: true
+  field_preview_images: true
   field_recipe_tags: true
+  field_thumb_images: true
   field_time: true
   langcode: true

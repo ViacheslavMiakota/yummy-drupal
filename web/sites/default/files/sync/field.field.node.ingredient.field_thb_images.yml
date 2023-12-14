@@ -1,0 +1,27 @@
+uuid: 4e17175a-fce1-49c7-baab-0f1017bfe157
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thb_images
+    - node.type.ingredient
+  module:
+    - file
+id: node.ingredient.field_thb_images
+field_name: field_thb_images
+entity_type: node
+bundle: ingredient
+label: thb_images
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

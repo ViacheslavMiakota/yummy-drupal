@@ -1,3 +1,4 @@
+uuid: a560991d-1b65-4014-8d0c-1c11b6dc48f1
 langcode: en
 status: true
 dependencies: {  }
@@ -45,13 +46,40 @@ source:
       name: time
       label: Time
       selector: time
+    -
+      name: thumb
+      label: Thumb
+      selector: thumb
+    -
+      name: preview
+      label: Preview
+      selector: preview
 process:
+  title: title
   field_title: title
   body/value: description
   field_category: category
   field_area: area
   field_instructions: instructions
   field_time: time
+  field_preview_images:
+    plugin: sub_process
+    source: preview
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration:
+          - migrate_recipe_preview
+        source: _id
+  field_thumb_images:
+    plugin: sub_process
+    source: thumb
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration:
+          - migrate_recipe_thumb
+        source: _id
   uid:
     plugin: default_value
     default_value: 1

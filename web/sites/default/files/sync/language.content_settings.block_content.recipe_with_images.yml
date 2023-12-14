@@ -1,0 +1,11 @@
+uuid: a7d89930-be96-456d-ba10-557a28c2e0d8
+langcode: uk
+status: true
+dependencies:
+  config:
+    - block_content.type.recipe_with_images
+id: block_content.recipe_with_images
+target_entity_type_id: block_content
+target_bundle: recipe_with_images
+default_langcode: site_default
+language_alterable: false
