@@ -1,0 +1,19 @@
+uuid: c99c792f-eeb5-4341-8742-208c4a8ae1df
+langcode: uk
+status: true
+dependencies:
+  config:
+    - contact.form.email_form
+    - field.storage.contact_message.field_user_email
+id: contact_message.email_form.field_user_email
+field_name: field_user_email
+entity_type: contact_message
+bundle: email_form
+label: user_email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

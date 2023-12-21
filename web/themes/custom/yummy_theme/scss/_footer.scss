@@ -15,7 +15,7 @@ footer .navbar-nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    height: 114px;
  }
 .footer_box,
 .footer_right,
@@ -42,16 +42,16 @@ footer .navbar-nav{
     margin-top: 64px;
     margin-bottom: 50px;
  }
-.footer_left,
-.footer_right, 
-.footer_center{
-    max-width: 418px;
+.footer_left{
+    min-width: 418px;
+ }
+.footer_right{
+  max-width: 340px;
  }
 .region-footer-center{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 95px;
  }
  
 .logo-block{

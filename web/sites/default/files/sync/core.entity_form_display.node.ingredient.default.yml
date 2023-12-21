@@ -4,13 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.ingredient.body
-    - field.field.node.ingredient.field_ingredient_thb
     - field.field.node.ingredient.field_thb_images
-    - image.style.thumbnail
     - node.type.ingredient
   module:
     - file
-    - image
     - path
     - text
 id: node.ingredient.default
@@ -28,17 +25,9 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  field_ingredient_thb:
-    type: image_image
-    weight: 26
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
   field_thb_images:
     type: file_generic
-    weight: 27
+    weight: 26
     region: content
     settings:
       progress_indicator: throbber

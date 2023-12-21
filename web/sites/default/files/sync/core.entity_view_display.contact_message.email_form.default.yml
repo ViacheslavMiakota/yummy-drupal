@@ -1,0 +1,39 @@
+uuid: d72dd256-d50f-4e43-833e-3b1eb00420b6
+langcode: uk
+status: true
+dependencies:
+  config:
+    - contact.form.email_form
+    - field.field.contact_message.email_form.field_form_email_item
+    - field.field.contact_message.email_form.field_form_email_title
+    - field.field.contact_message.email_form.field_user_email
+id: contact_message.email_form.default
+targetEntityType: contact_message
+bundle: email_form
+mode: default
+content:
+  field_form_email_item:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_form_email_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_user_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  message: true

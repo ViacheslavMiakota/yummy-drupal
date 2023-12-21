@@ -1,7 +1,9 @@
 uuid: 00f8bdf2-41f2-4da3-b98f-567516a637ba
 langcode: uk
-status: false
+status: true
 dependencies:
+  module:
+    - system
   theme:
     - yummy
 _core:
@@ -17,4 +19,8 @@ settings:
   label: 'Заголовок сторінки'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /home

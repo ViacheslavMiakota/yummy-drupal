@@ -1,0 +1,8 @@
+uuid: 31314fff-dc91-40fe-a1a7-d620337963dd
+langcode: uk
+status: true
+dependencies: {  }
+id: title-link-recipe
+label: title_link_recipe
+description: ''
+locked: false

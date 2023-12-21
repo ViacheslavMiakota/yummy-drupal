@@ -1,0 +1,78 @@
+.views-view-responsive-grid__item{
+    position: relative;
+
+}
+.img-responsive{
+    width: 300px;
+    height: 323px;
+    border-radius: 8px;
+}
+.container{
+    width: 1240px;
+}
+.navbar.container{
+    max-width: 1240px;
+}
+.col-sm-3{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.views-field{
+    position: absolute;
+    bottom: 23px;
+    left: 16px;
+    width: 268px;
+    background-color: #fafafa;
+    padding: 16px;
+    border-radius: 8px;
+}
+.views-view-responsive-grid__item-inner{
+    position: relative;
+}
+.field-content{
+    color:  #3E4462;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.24px;
+
+}
+.views-element-container{
+    display: flex;
+    gap: 50px;
+    flex-direction: column
+}
+.block-title{
+    color: #001833;
+    font-feature-settings: 'liga' off;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1; 
+    letter-spacing: -0.88px;
+}
+.more-link{
+    display: flex;
+    margin-right: auto;
+}
+.view .more-link a{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    padding: 10px 24px;
+    align-items: center;
+    gap: 8px;
+    background-color: #8AA936;
+    border-radius: 6px;
+    margin-left: auto;
+    color: #fafafa;
+}
+.view .more-link a:hover{
+    background-color: #001833;
+}
+.row-bottom{
+
+}

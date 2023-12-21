@@ -15,7 +15,6 @@ dependencies:
     - image.style.thumbnail
     - node.type.recipe
   module:
-    - file
     - image
     - path
     - text
@@ -73,11 +72,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_preview_images:
-    type: file_generic
+    type: image_image
     weight: 30
     region: content
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_recipe_tags:
     type: string_textfield

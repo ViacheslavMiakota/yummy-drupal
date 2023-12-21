@@ -1,0 +1,26 @@
+uuid: 9d3d1112-6068-44c5-b7d6-af384aeb304e
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.full_html
+    - node.type.newsleter
+  module:
+    - text
+id: node.newsleter.body
+field_name: body
+entity_type: node
+bundle: newsleter
+label: Body
+description: "<h3>Subscribe to our Newsletter</h3>\r\n<p>Subscribe up to our newsletter. Be in touch with latest news and special offers, etc.</p>"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - full_html
+field_type: text_with_summary

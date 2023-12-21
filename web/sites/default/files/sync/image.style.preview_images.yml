@@ -1,0 +1,14 @@
+uuid: 28c54cfa-cc3d-43c7-84e8-b5ccd902d93b
+langcode: uk
+status: true
+dependencies: {  }
+name: preview_images
+label: Preview_images
+effects:
+  9ff0f384-86bd-4d2f-b122-e6e574c9d2fe:
+    uuid: 9ff0f384-86bd-4d2f-b122-e6e574c9d2fe
+    id: image_resize
+    weight: 1
+    data:
+      width: 300
+      height: 323

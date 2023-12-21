@@ -1,4 +1,4 @@
-uuid: 4e17175a-fce1-49c7-baab-0f1017bfe157
+uuid: 14dd2e0e-5b2e-4035-9154-6afe98482f9b
 langcode: uk
 status: true
 dependencies:
@@ -21,7 +21,7 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: txt
+  file_extensions: 'txt png jpeg jpg'
   max_filesize: ''
   description_field: false
 field_type: file

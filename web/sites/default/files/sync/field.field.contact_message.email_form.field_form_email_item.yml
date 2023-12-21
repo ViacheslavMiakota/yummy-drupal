@@ -1,0 +1,19 @@
+uuid: 75f9e249-9203-440c-aa6d-4891643f9599
+langcode: uk
+status: true
+dependencies:
+  config:
+    - contact.form.email_form
+    - field.storage.contact_message.field_form_email_item
+id: contact_message.email_form.field_form_email_item
+field_name: field_form_email_item
+entity_type: contact_message
+bundle: email_form
+label: form_email_item
+description: '<p class="form_email_item">Subscribe up to our newsletter. Be in touch with latest news and special offers, etc.</p>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

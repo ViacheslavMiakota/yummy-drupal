@@ -1,0 +1,8 @@
+uuid: 062f6d1a-0093-4ba5-9591-4ffeb51a2098
+langcode: uk
+status: true
+dependencies: {  }
+id: category
+label: Categories
+description: 'Переходимо на сторінку категорій рецептів'
+locked: false

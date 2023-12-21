@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.ingredient.body
-    - field.field.node.ingredient.field_ingredient_thb
     - field.field.node.ingredient.field_thb_images
     - node.type.ingredient
   module:
@@ -30,6 +29,5 @@ content:
     weight: 100
     region: content
 hidden:
-  field_ingredient_thb: true
   field_thb_images: true
   langcode: true

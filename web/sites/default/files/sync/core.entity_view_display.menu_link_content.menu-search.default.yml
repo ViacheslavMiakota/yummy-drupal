@@ -1,0 +1,14 @@
+uuid: 19316d31-2bfb-41d8-97cd-5056b6ac4ecd
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.menu-search
+id: menu_link_content.menu-search.default
+targetEntityType: menu_link_content
+bundle: menu-search
+mode: default
+content: {  }
+hidden:
+  children: true
+  langcode: true

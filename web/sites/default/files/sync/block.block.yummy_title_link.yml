@@ -1,0 +1,30 @@
+uuid: bb0ea1a2-2055-42e4-9e9c-bf506bd5b452
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1f14ef55-3083-4d4d-91dd-341c9c350232'
+  module:
+    - block_content
+    - system
+  theme:
+    - yummy
+id: yummy_title_link
+theme: yummy
+region: highlighted
+weight: -5
+provider: null
+plugin: 'block_content:1f14ef55-3083-4d4d-91dd-341c9c350232'
+settings:
+  id: 'block_content:1f14ef55-3083-4d4d-91dd-341c9c350232'
+  label: title_link
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

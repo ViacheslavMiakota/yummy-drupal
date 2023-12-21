@@ -27,10 +27,7 @@ source:
       label: Preview
       selector: preview
 process:
-  filename:
-    plugin: migration_lookup
-    migration: migrate_recipe
-    source: preview
+  filename: preview
   uri: preview
 destination:
   plugin: 'entity:file'

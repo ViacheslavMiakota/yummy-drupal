@@ -1,0 +1,23 @@
+uuid: 38e13f43-9a57-4636-b816-57c6f98eb317
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.title-link-recipe.field_title_link
+    - system.menu.title-link-recipe
+id: menu_link_content.title-link-recipe.default
+targetEntityType: menu_link_content
+bundle: title-link-recipe
+mode: default
+content:
+  field_title_link:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  children: true
+  langcode: true

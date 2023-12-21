@@ -27,11 +27,7 @@ source:
       label: Thumb
       selector: thb
 process:
-  filename:
-    -
-      plugin: migration_lookup
-      migration: migrate_ingredient
-      source: thb
+  filename: thb
   uri: thb
 destination:
   plugin: 'entity:file'

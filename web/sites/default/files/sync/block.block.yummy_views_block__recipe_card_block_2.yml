@@ -1,0 +1,29 @@
+uuid: 710bf436-740b-42b8-95e5-b448ebe2c38f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - views.view.recipe_card
+  module:
+    - system
+    - views
+  theme:
+    - yummy
+id: yummy_views_block__recipe_card_block_2
+theme: yummy
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'views_block:recipe_card-block_2'
+settings:
+  id: 'views_block:recipe_card-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

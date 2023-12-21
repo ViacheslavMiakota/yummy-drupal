@@ -1,0 +1,12 @@
+uuid: aaa61b3f-7c64-472e-9e92-94a6257b4bd4
+langcode: uk
+status: true
+dependencies: {  }
+id: email_form
+label: Email_form
+recipients:
+  - yummy@gmail.com
+reply: ''
+weight: 0
+message: 'Enter your email address'
+redirect: /home

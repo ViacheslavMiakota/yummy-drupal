@@ -1,0 +1,33 @@
+uuid: 1d787644-1d26-401a-bcd0-422936e2c712
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.title-link-recipe.field_title_link
+    - system.menu.title-link-recipe
+  module:
+    - link
+id: menu_link_content.title-link-recipe.default
+targetEntityType: menu_link_content
+bundle: title-link-recipe
+mode: default
+content:
+  field_title_link:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  view_mode: true

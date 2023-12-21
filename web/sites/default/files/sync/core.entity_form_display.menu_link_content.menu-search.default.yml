@@ -1,0 +1,29 @@
+uuid: 0102afe0-cf6d-4a9f-87ee-3e1dfdda95e5
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.menu-search
+  module:
+    - link
+    - menu_item_extras
+id: menu_link_content.menu-search.default
+targetEntityType: menu_link_content
+bundle: menu-search
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  view_mode:
+    type: menu_item_extras_view_mode_selector_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  title: true

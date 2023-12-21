@@ -1,4 +1,4 @@
-uuid: 7c77c49c-a768-4fec-8ec3-5cec93030a0f
+uuid: fd64fe27-bce1-48b9-8793-8ceb12be6f09
 langcode: uk
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_preview_images
     - node.type.recipe
   module:
-    - file
+    - image
 id: node.recipe.field_preview_images
 field_name: field_preview_images
 entity_type: node
@@ -21,7 +21,18 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: txt
+  file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
-  description_field: false
-field_type: file
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: 251
+    height: 201
+field_type: image

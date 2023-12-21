@@ -11,7 +11,7 @@ _core:
 id: yummy_help
 theme: yummy
 region: highlighted
-weight: -2
+weight: -6
 provider: null
 plugin: help_block
 settings:

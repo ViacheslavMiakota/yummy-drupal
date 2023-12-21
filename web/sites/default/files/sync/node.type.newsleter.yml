@@ -1,0 +1,22 @@
+uuid: ba70d370-39cc-4bc2-828e-1206b316abb4
+langcode: uk
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - tools
+      - admin
+      - account
+      - footer
+      - main
+    parent: 'main:'
+name: Newsleter
+type: newsleter
+description: "Subscribe to our Newsletter\r\nSubscribe up to our newsletter. Be in touch with latest news and special offers, etc."
+help: 'Enter your email address'
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,19 @@
+uuid: 80f1c195-3d02-4ccb-b1db-9bd3cb5276be
+langcode: uk
+status: true
+dependencies:
+  config:
+    - contact.form.email_form
+    - field.storage.contact_message.field_form_email_title
+id: contact_message.email_form.field_form_email_title
+field_name: field_form_email_title
+entity_type: contact_message
+bundle: email_form
+label: form_email_title
+description: "Subscribe to our Newsletter\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

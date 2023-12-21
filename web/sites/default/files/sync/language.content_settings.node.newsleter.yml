@@ -1,0 +1,11 @@
+uuid: 3ebddc67-2dfa-44e2-90fd-701e3463a9e7
+langcode: uk
+status: true
+dependencies:
+  config:
+    - node.type.newsleter
+id: node.newsleter
+target_entity_type_id: node
+target_bundle: newsleter
+default_langcode: site_default
+language_alterable: false

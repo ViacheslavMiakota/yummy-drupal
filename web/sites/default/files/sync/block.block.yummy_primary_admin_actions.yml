@@ -9,7 +9,7 @@ _core:
 id: yummy_primary_admin_actions
 theme: yummy
 region: highlighted
-weight: -6
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

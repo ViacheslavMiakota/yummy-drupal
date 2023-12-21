@@ -22,13 +22,19 @@
   padding-left: 0;
   padding-right: 0;
 }
-.navbar-default li a{
+.navbar-default .navbar-nav li a{
   color: #23262A;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.6;
+}
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus,
+.navbar-default .navbar-nav > .active > a{
+  color: #8BAA36 ;
+  background-color: inherit;
 }
 .navbar-nav li a{
   color: #FAFAFA;
@@ -38,4 +44,43 @@
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.14px;
+}
+.navbar-nav li a:hover,
+.navbar-nav li a:focus,
+.navbar-nav > .active > a,
+.menu--main > .active >a:hover{
+  color: #8BAA36 ;
+  background-color: inherit;
+}
+.menu--main .last a{
+  background-image: url("./../images/search.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.menu--main .last a:hover,
+.menu--main .last a:focus,
+.menu--main .last > .active >a{
+  background-image: url("./../images/search_hover.png");
+  background-color: inherit;
+}
+.menu--main .last {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.logo img{
+  width: 44px;
+}
+.logo img:hover,
+.logo img:focus{
+  width: 48px;
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s
 }

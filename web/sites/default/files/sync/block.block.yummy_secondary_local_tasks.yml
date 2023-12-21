@@ -9,7 +9,7 @@ _core:
 id: yummy_secondary_local_tasks
 theme: yummy
 region: highlighted
-weight: -3
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

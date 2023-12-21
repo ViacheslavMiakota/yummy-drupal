@@ -43,18 +43,15 @@ process:
   body/value: desc
   field_t: t
   field_thb_images:
-    plugin: sub_process
-    source: thb
-    process:
-      target_id:
-        plugin: migration_lookup
-        migration:
-          - migrate_ingredient_thb
-        source: _id
+    plugin: migration_lookup
+    migration: migrate_ingredient_thb
+    source: _id
   uid:
     plugin: default_value
     default_value: 1
 destination:
   plugin: 'entity:node'
   default_bundle: ingredient
-migration_dependencies: null
+migration_dependencies:
+  required:
+    - migrate_ingredient_thb

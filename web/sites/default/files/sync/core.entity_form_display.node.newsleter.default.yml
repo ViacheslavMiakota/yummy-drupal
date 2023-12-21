@@ -1,0 +1,40 @@
+uuid: d86aa1f7-45dc-41e9-9344-cb73f5da2b99
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.node.newsleter.body
+    - node.type.newsleter
+  module:
+    - text
+id: node.newsleter.default
+targetEntityType: node
+bundle: newsleter
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
