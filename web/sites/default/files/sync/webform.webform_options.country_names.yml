@@ -1,0 +1,14 @@
+uuid: c9ce6dd4-c38b-477e-9ad3-76b4c0761506
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: zsfFP124dAM-sJkuEfnwaA7DN6o3-IsaXLgdNmObbYg
+id: country_names
+label: 'Назви країн'
+category: Географічний
+likert: false
+options: ''

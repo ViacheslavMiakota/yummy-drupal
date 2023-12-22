@@ -1,0 +1,13 @@
+uuid: 66894711-2537-40ee-9741-60ef1f2aaa5a
+langcode: uk
+status: true
+dependencies:
+  module:
+    - webform
+_core:
+  default_config_hash: aqi5Ftlnhe9KyOowpK7CanEvJMBBo8xAR1dA99bKOuc
+id: webform_unarchive_action
+label: 'Відновити вебформу'
+type: webform
+plugin: webform_unarchive_action
+configuration: {  }

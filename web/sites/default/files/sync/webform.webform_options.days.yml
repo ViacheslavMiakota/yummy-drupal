@@ -1,0 +1,14 @@
+uuid: c5fd820f-d51f-4a59-8adf-a01b0be15839
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: YNrKbYrWWjeubUUM8AsQ19KnX7cU1elACR14CZJHmdg
+id: days
+label: Дні(в)
+category: 'Дата та час'
+likert: false
+options: "Понеділок: Понеділок\r\nВівторок: Вівторок\r\nСереда: Середа\r\nЧетвер: Четвер\r\nП’ятниця: П’ятниця\r\nСубота: Субота\r\nНеділя: Неділя\n"

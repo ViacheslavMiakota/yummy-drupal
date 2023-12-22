@@ -1,0 +1,25 @@
+uuid: 31b2dbc3-a15a-450d-8efc-ee638e3fd009
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fb3f59c7-ebfb-4b16-b3f1-686e15e69ce2'
+  module:
+    - block_content
+  theme:
+    - yummy
+id: yummy_social_link
+theme: yummy
+region: footer_center
+weight: -10
+provider: null
+plugin: 'block_content:fb3f59c7-ebfb-4b16-b3f1-686e15e69ce2'
+settings:
+  id: 'block_content:fb3f59c7-ebfb-4b16-b3f1-686e15e69ce2'
+  label: Social_link
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

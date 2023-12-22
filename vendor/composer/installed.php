@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'c7ba6e8c3151c2c3a4af7a040253760b3fd13443',
+        'reference' => 'd6627f190e31a4fad59ecc9a419b7ee37487347d',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -403,7 +403,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'c7ba6e8c3151c2c3a4af7a040253760b3fd13443',
+            'reference' => 'd6627f190e31a4fad59ecc9a419b7ee37487347d',
             'dev_requirement' => false,
         ),
         'drupal/user_menu_avatar' => array(
@@ -413,6 +413,15 @@
             'install_path' => __DIR__ . '/../../web/modules/contrib/user_menu_avatar',
             'aliases' => array(),
             'reference' => '9.0.0',
+            'dev_requirement' => false,
+        ),
+        'drupal/webform' => array(
+            'pretty_version' => '6.2.2',
+            'version' => '6.2.2.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/webform',
+            'aliases' => array(),
+            'reference' => '6.2.2',
             'dev_requirement' => false,
         ),
         'drush/drush' => array(

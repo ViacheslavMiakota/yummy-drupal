@@ -16,7 +16,7 @@ provider: null
 plugin: system_powered_by_block
 settings:
   id: system_powered_by_block
-  label: 'Працює на Drupal'
+  label: 'Працює нwа Drupal'
   label_display: '0'
   provider: system
 visibility: {  }

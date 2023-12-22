@@ -1,0 +1,29 @@
+uuid: 9043d86f-b974-4227-b878-9717520dfba4
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.menu-categories
+  module:
+    - system
+  theme:
+    - yummy
+id: yummy_menu_categories
+theme: yummy
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-categories'
+settings:
+  id: 'system_menu_block:menu-categories'
+  label: Menu_categories
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /categories

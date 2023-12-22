@@ -1,0 +1,8 @@
+uuid: 17cbc23c-1d16-4acc-b273-7bc1fa922d56
+langcode: uk
+status: true
+dependencies: {  }
+id: menu-categories
+label: Menu_categories
+description: 'Сортуємо рецепти по категоріям'
+locked: false

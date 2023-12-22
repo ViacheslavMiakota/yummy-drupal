@@ -1,0 +1,29 @@
+uuid: c40dc8f0-9432-4adf-9626-a50c4adb1038
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_mie_demo_content_terms
+    - system.menu.menu-categories
+    - taxonomy.vocabulary.mie_demo_content
+id: menu_link_content.menu-categories.field_mie_demo_content_terms
+field_name: field_mie_demo_content_terms
+entity_type: menu_link_content
+bundle: menu-categories
+label: 'Mie Demo Content Terms'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mie_demo_content: mie_demo_content
+    sort:
+      field: _none
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

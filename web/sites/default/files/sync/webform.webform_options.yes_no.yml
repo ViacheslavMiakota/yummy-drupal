@@ -1,0 +1,14 @@
+uuid: aaa4c6ed-8004-459d-96ec-947c2aa08b9e
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: W88NYg31DbaVNQx1Uir_dwwXHVtF09QOq4VBGsH1Snk
+id: yes_no
+label: Так/Ні
+category: Загальне
+likert: false
+options: "Так: Так\r\nНі: Ні\n"

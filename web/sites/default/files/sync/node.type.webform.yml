@@ -1,0 +1,16 @@
+uuid: 0482f666-311d-4884-921a-6847b1086abc
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform_node
+_core:
+  default_config_hash: BuY_3PjmYtRTSuvyFORJZUe0-TQiNXEE6yYQ_dkjxW8
+name: Вебформа
+type: webform
+description: 'Основна сторінка з прикріпленою вебформою.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

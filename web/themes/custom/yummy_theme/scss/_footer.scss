@@ -10,6 +10,10 @@ footer .navbar-nav{
     margin: 0;
     padding: 0;
     border: none;
+    background-image: url(./../images/kisspng-pasta-spinach-dip-english-muffin-breakfast-sandwic-spinach-5abcc32f2ee473\ 2.png);
+    background-size: 419px 394px;
+    background-repeat: no-repeat;
+    background-position: right 0px top 139px;
  }
 .region-footer{
     display: flex;
@@ -29,7 +33,6 @@ footer .navbar-nav{
 .footer-container{
     display: flex;
     justify-content: space-between;
-    align-items: start;
  }
 .region-footer-right{
     display: flex;
@@ -43,10 +46,10 @@ footer .navbar-nav{
     margin-bottom: 50px;
  }
 .footer_left{
-    min-width: 418px;
+    min-width: 340px;
  }
 .footer_right{
-  max-width: 340px;
+    max-width: 340px;
  }
 .region-footer-center{
     display: flex;
@@ -99,3 +102,114 @@ footer .navbar-nav{
     gap: 12px;
     flex-direction: column;
  }
+ .form-type-email .control-label{
+    color: #FAFAFA;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: Poppins;
+ }
+ .webform-element-description {
+    color: #FAFAFA;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.29;
+    letter-spacing: 0.28px;
+    margin-top: 14px;
+ }
+ .form-type-email{
+    margin-bottom: 16px;
+ }
+.form-email{
+    border-radius: 6px;
+    display: flex;
+    background-color: transparent;
+    color: #FAFAFA;
+    height: 60px;
+    margin-top: 28px;
+    padding: 18px 52px;
+    background-image: url('./../images/Group\ 204.svg');
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+.webform-button--submit{
+    width: 100%;
+    padding: 21px;
+    background-color: #8BAA36;
+    color: #fafafa;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    font-style: normal;
+    border-radius: 6px;
+    border-color: #8BAA36;
+}
+.webform-button--submit:hover{
+    background-color: #001833;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s
+}
+footer .contextual-region .navbar-nav > li > a{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.contextual-region .navbar-nav{
+    display: flex;
+    gap: 24px;
+}
+.contextual-region .menu--main .last a,
+.contextual-region .menu--main .last a{
+    background-image: url('./../images/search_hover.png');
+    background-color: inherit;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+footer .field--label-hidden > p{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+}
+.facebook-link{
+    background-image: url('./../images/facebook.png');
+}
+.facebook-link:hover{
+    background-image: url('./../images/facebook-hover.png');
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s
+
+}
+.twiter-link{
+    margin-top: 2px;
+    background-image: url('./../images/twiter.png');
+}
+.twiter-link:hover{
+    background-image: url('./../images/twiter-hover.png');
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s
+}
+.instagram-link{
+    background-image: url('./../images/instagram.png');
+}
+.instagram-link:hover{
+    background-image: url('./../images/instagram-hover.png');
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s
+}
+.youtube-link{
+    margin-top: 2px;
+    background-image: url('./../images/youtube.png');
+}
+.youtube-link:hover{
+    background-image: url('./../images/youtube-hover.png');
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s
+}
+.facebook-link,
+.youtube-link,
+.instagram-link,
+.twiter-link{
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    display: flex;
+}

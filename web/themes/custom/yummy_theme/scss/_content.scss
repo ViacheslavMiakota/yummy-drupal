@@ -72,7 +72,40 @@
 }
 .view .more-link a:hover{
     background-color: #001833;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s
 }
 .row-bottom{
+    // padding-bottom: 118px;
+    background-image: url(./../images/kisspng-pasta-spinach-dip-english-muffin-breakfast-sandwic-spinach-5abcc32f2ee473\ 1.png);
+    background-size: 696px 1037px;
+    background-repeat: no-repeat;
+    background-position: left 0px bottom -518px;
+}
+.menu--btn-categories{
+    display: flex;
+    justify-content: center;
+}
 
+.menu--btn-categories .last a{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 240px;
+    padding: 20px 52px;
+    background-color: transparent;
+    border-radius: 24px 44px;
+    border: 2px solid #8AA936;
+    color: rgb(34, 37, 42);
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 14px;
+    margin-bottom: 125px;
+}
+.menu--btn-categories .last a:hover,
+.menu--btn-categories .last a:focus{
+    background-color: #8AA936;
+    color: #fafafa;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s
 }

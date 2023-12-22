@@ -1,0 +1,14 @@
+uuid: f9a408d8-a79b-42a1-bb4f-dd973226e5bd
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: nPp-CfMKrP0yDMtyO0wQRwawEqaJVAPzQapinXmDgyU
+id: likert_agreement
+label: 'Likert: Погодження'
+category: Likert
+likert: true
+options: "1: Зовсім не згоден\r\n2: Не згоден\r\n3: Байдуже\r\n4: Згоден\r\n5: Повністю згоден\n"

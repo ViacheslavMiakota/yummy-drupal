@@ -1,0 +1,14 @@
+uuid: 8162d189-cd5b-4563-ad04-fdddb7b30697
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: Mb_L3vE-0IBZH5s2rjpk2LNn0QHClQP9AARQdCmVLt4
+id: translations
+label: Переклади
+category: Мова
+likert: false
+options: ''

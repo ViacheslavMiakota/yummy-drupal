@@ -1,0 +1,14 @@
+uuid: 9d832602-4afc-4c72-9fd6-8892b0d3a28d
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 4J2RPG4JmsD4Fm1NlIQY0JHkrJ08UUl0qTF0_EjUxvw
+id: relationship
+label: "Зв'язок"
+category: Демографічна
+likert: false
+options: "Батьки: Батьки \r\nІнші близькі родичі: Інші близькі родичі\r\nБрат/сестра: Брат/сестра\r\nДитина: Дитина\r\nДруг: Друг\n"

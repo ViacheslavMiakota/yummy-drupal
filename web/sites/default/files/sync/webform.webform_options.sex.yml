@@ -1,0 +1,14 @@
+uuid: c8c0c63b-9baa-412e-9f43-c28939112b52
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: WRpxpwYpfcO_i0so7BV4QXxXlbPiSVppYmAV6DAz4c0
+id: sex
+label: Стать
+category: Демографічна
+likert: false
+options: "Чоловік: Чоловік\r\nЖінка: Жінка\n"

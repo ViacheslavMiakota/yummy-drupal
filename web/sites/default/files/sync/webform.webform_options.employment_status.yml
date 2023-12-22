@@ -1,0 +1,14 @@
+uuid: 45565066-4464-46a2-9f2d-0eec21d5f0e1
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 8MCmsz_csdJkVItxI8g_s4zp2PM285YqCy_gWTzOLPw
+id: employment_status
+label: Зайнятість
+category: Демографічна
+likert: false
+options: "'Повний робочий день': 'Повний робочий день'\r\n'Неповний робочий день': 'Неповний робочий день' 'Військовий': 'Військовий'\r\nБезробітний: Безробітний\r\nПенсіонер: Пенсіонер\n"

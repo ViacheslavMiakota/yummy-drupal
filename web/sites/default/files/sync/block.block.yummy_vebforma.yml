@@ -1,0 +1,26 @@
+uuid: a5f79e29-fac0-4731-9c7f-cc179ae9b2ca
+langcode: uk
+status: true
+dependencies:
+  config:
+    - webform.webform.email_form
+  module:
+    - webform
+  theme:
+    - yummy
+id: yummy_vebforma
+theme: yummy
+region: footer_right
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Вебформа
+  label_display: '0'
+  provider: webform
+  webform_id: email_form
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: 1acd3b9c-6dcd-4cfb-97db-ece4934964c8
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: LkO63Zl2cP_l9YdjzWI8dWoD9uD0pytkPiUiUM2bo9A
+id: phone_types
+label: 'Тип телефону'
+category: Демографічна
+likert: false
+options: "Дім: Дім\r\nОфіс: Офіс\r\nМобільний: Мобільний\n"

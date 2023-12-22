@@ -1,0 +1,13 @@
+uuid: 1ef3fe31-f22f-421d-bfe2-9b3e7d1fda88
+langcode: uk
+status: true
+dependencies:
+  module:
+    - webform
+_core:
+  default_config_hash: OmnschvBLb9ZJn0iVyBd2odf8U8Nt0INjRbRMixZw9U
+id: webform_archive_action
+label: 'Архівувати вебформу'
+type: webform
+plugin: webform_archive_action
+configuration: {  }

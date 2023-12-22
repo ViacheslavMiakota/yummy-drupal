@@ -1,0 +1,14 @@
+uuid: 88b1e62e-0a31-4187-b7ae-c5026db0c32d
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: cR3A6XXinVGC9g5vLS-vVvTC2ppZXRNXLPWA8xBUMew
+id: province_codes
+label: 'Коди провінцій'
+category: Географічний
+likert: false
+options: "AB: Альберта\r\nBC: 'Британська Колумбія'\r\nMB: Манітоба\r\nNB: 'Нью-Брансвік'\r\nNL: 'Ньюфаундленд і Лабрадор'\r\nNS: 'Нова Шотландія'\r\nNT: 'Північно-західні території'\r\nNU: Нунавут\r\n'ON': Онтаріо\r\nPE: 'Острів принца Едварда'\r\nQC: Квебек\r\nSK: Саскачеван\r\nYT: Юкон\n"

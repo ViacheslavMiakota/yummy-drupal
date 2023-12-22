@@ -1,0 +1,14 @@
+uuid: 6136ccd3-bd4a-40dc-a3dc-43a8d23bda37
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: Hbc8n5HtVZVs5fSBSpSbuY07CVvqkKP76csvRHN9pK8
+id: likert_importance
+label: 'Likert: Важливість'
+category: Likert
+likert: true
+options: "1: Зовсім не важливо\r\n2: Дещо важливо\r\n3: Байдуже\r\n4: Важливо\r\n5: Дуже важливо\n"

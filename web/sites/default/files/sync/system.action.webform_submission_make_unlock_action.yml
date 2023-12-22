@@ -1,0 +1,13 @@
+uuid: 9814a435-42ac-4bfb-8823-795abc639aa0
+langcode: uk
+status: true
+dependencies:
+  module:
+    - webform
+_core:
+  default_config_hash: begZ0-RmTzO_zDAwEKA2lKvtGYw1vbFOzbQOJzUbZX0
+id: webform_submission_make_unlock_action
+label: 'Розблокувати надсилання'
+type: webform_submission
+plugin: webform_submission_make_unlock_action
+configuration: {  }

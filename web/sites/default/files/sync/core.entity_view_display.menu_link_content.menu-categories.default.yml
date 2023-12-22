@@ -1,0 +1,28 @@
+uuid: 5683f003-7e51-4ae4-999f-eee7693f137f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.menu-categories.field_mie_demo_content_terms
+    - system.menu.menu-categories
+id: menu_link_content.menu-categories.default
+targetEntityType: menu_link_content
+bundle: menu-categories
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_mie_demo_content_terms:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

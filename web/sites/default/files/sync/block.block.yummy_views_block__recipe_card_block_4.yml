@@ -12,7 +12,7 @@ dependencies:
 id: yummy_views_block__recipe_card_block_4
 theme: yummy
 region: sidebar_first
-weight: -6
+weight: -9
 provider: null
 plugin: 'views_block:recipe_card-block_4'
 settings:

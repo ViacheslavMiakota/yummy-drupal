@@ -1,0 +1,14 @@
+uuid: d3f117a5-176d-4c15-b7f0-1a0f55197e7f
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: mYH14Vi65Ixj10c_GFa7CipxU3D0Bt9wgo8zE8zjOfE
+id: languages
+label: Мови
+category: Мова
+likert: false
+options: ''

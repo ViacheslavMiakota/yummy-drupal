@@ -1,0 +1,14 @@
+uuid: 6b345dc6-536c-472f-80fc-2edf0f011278
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: AKE2SNwCpl6Mu_cmbq9ZM2_cXxCikCVj1vcPE9oHWTs
+id: likert_satisfaction
+label: 'Likert: Задоволення'
+category: Likert
+likert: true
+options: "1: Дуже незадоволений\r\n2: Незадоволений\r\n3: Байдуже\r\n4: Задоволений\r\n5: Дуже задоволений\n"

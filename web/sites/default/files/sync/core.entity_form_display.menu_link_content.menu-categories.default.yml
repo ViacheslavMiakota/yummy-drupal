@@ -1,0 +1,47 @@
+uuid: e86e8a6e-e1ea-4ed3-afb9-f6da667b9662
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.menu-categories.field_mie_demo_content_terms
+    - system.menu.menu-categories
+  module:
+    - link
+    - menu_item_extras
+id: menu_link_content.menu-categories.default
+targetEntityType: menu_link_content
+bundle: menu-categories
+mode: default
+content:
+  field_mie_demo_content_terms:
+    type: entity_reference_autocomplete
+    weight: 21
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  view_mode:
+    type: menu_item_extras_view_mode_selector_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

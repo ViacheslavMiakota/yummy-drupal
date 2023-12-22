@@ -1,0 +1,29 @@
+uuid: 6f72e060-fd6a-44d6-9099-b8d7a6159db2
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.btn-categories
+  module:
+    - system
+  theme:
+    - yummy
+id: yummy_btn_categories
+theme: yummy
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:btn-categories'
+settings:
+  id: 'system_menu_block:btn-categories'
+  label: Btn_categories
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

@@ -1,0 +1,14 @@
+uuid: 08069fea-d047-4700-9526-63f58ee992c7
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: cjVDbAE5BlopGrY-tfxsxMoyEibwBBNgdQwDdxOSkow
+id: marital_status
+label: 'Сімейний стан'
+category: Демографічна
+likert: false
+options: "Неодружений: Неодружений\r\nОдружений: Одружений\r\nРозлучений: Розлучений\r\nВдівець: Вдівець\n"

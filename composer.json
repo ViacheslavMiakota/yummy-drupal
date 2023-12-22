@@ -27,6 +27,7 @@
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_tools": "^6.0",
         "drupal/user_menu_avatar": "^9.0",
+        "drupal/webform": "^6.2",
         "drush/drush": "^12.4"
     },
     "conflict": {

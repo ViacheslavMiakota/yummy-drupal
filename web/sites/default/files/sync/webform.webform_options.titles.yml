@@ -1,0 +1,14 @@
+uuid: 589e3ea6-5e0f-4740-a305-019c5b678011
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: PEUoedWrfYEX7oZ8CcOukfBTVxar1cPSROX8534esuU
+id: titles
+label: Заголовки
+category: Демографічна
+likert: false
+options: "Miss: Miss\r\nMs: Ms\r\nMr: Mr\r\nMrs: Mrs\r\nDr: Dr\n"

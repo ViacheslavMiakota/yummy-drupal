@@ -1,0 +1,14 @@
+uuid: 0a22d725-e779-4fee-b500-f557485b0c66
+langcode: uk
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: mII4acOv33s-j8PINywrCag4OITbeJGxdPO373dnHHw
+id: education
+label: Освіта
+category: Демографічна
+likert: false
+options: "Середня школа: Середня школа\r\nСтупінь спеціаліста: Ступінь спеціаліста\r\nВища освіта або професійний ступінь: Вища освіта або професійний ступінь \r\nДеякі коледжі: Деякі коледжі\n"
